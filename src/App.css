@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* ================= PORTFOLIO WRAPPER ================= */
+/* THIS CENTERS THE WHOLE WEBSITE */
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;          /* ← true horizontal centering */
+  padding: 20px;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.header-right a {
+  margin-left: 28px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #444;
+  transition: color 0.25s ease;
+}
+
+.header-right a:hover {
+  color: #000;
+}
+
+.contact-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff !important;
+  font-size: 0.75rem;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ddd;
+  margin: 0 auto;          /* ← keeps hero centered */
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= HERO OVERLAY CARD ================= */
+.hero-content {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  max-width: 340px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content .date {
+  font-size: 0.75rem;
+  color: #777;
+  letter-spacing: 0.6px;
+}
+
+.hero-content h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 6px 0 8px;
+  line-height: 1.2;
+}
+
+.hero-content button {
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.hero-content button:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+/* ================= GALLERY ================= */
+/* CENTERED BLOCK */
+.gallery {
+  margin: 40px auto 0;
+  max-width: 1100px;       /* ← visually centered grid */
+  columns: 3;
+  column-gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  break-inside: avoid;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+  margin-top: 60px;
+  padding: 36px 0 20px;
+  border-top: 1px solid #e6e8ee;
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.footer-content strong {
+  font-weight: 500;
+  color: #222;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.25s ease;
+}
+
+.footer-content a:hover {
+  color: #000;
+}
+
+.footer-bottom {
+  margin-top: 18px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Logo / Brand */
+.logo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* Navigation */
+.header-right a {
+  margin-left: 28px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #444;
+  transition: color 0.25s ease;
+}
+
+.header-right a:hover {
+  color: #000;
+}
+
+/* Contact Button */
+.contact-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff !important;
+  font-size: 0.75rem;
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+  .hero {
+    height: 320px;
+  }
+
+  .gallery {
+    columns: 2;
+  }
+
+  .hero-content {
+    max-width: 320px;
+    padding: 14px 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 14px;
+  }
+
+  .header-right a {
+    margin-left: 16px;
+    font-size: 0.75rem;
+  }
+
+  .hero {
+    height: 260px;
+    border-radius: 16px;
+  }
+
+  .hero-content {
+    left: 12px;
+    bottom: 12px;
+    max-width: 82%;
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+
+  .hero-content .date {
+    font-size: 0.68rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.15rem;
+    margin: 4px 0 6px;
+  }
+
+  .hero-content button {
+    padding: 5px 12px;
+    font-size: 0.68rem;
+  }
+
+  .gallery {
+    margin-top: 28px;
+    columns: 1;
+  }
+}
+
+/* HEADER - MOBILE */
+.header {
+  margin-bottom: 16px;
+}
+
+.header-right a {
+  margin-left: 16px;
+  font-size: 0.75rem;
+}
+
+.contact-btn {
+  padding: 5px 12px;
+}
+
