@@ -3,22 +3,21 @@ import "./App.css";
 const photos = [
   "/images/1.jpg",
   //"/images/2.jpg",
-  "/images/3.jpg",
-  "/images/4.jpg",
+  "/images/55.jpg",
+  "/images/53.jpg",
   "/images/5.jpg",
   //"/images/6.jpg",
   //"/images/7.jpg",
-  "/images/8.jpg",
+  //"/images/8.jpg",
   "/images/9.jpg",
-  "/images/10.jpg",
-  "/images/11.jpg",
-  "/images/12.jpg",
+ // "/images/10.jpg",
+  //"/images/11.jpg",
+  //"/images/12.jpg",
   "/images/13.png",
   "/images/14.jpg",
-  "/images/20.jpg",
-  "/images/21.jpg",
+  
   //"/images/17.jpg",
-  "/images/25.png",
+  //"/images/25.png",
   "/images/19.png",
   "/images/24.png",
   "/images/23.png",
@@ -28,23 +27,37 @@ const photos = [
   "/images/48.png",
   "/images/31.jpg",
   "/images/32.png",
-  "/images/33.png",
+  "/images/54.jpg",
   "/images/34.png",
   //"/images/35.jpg",
   //"/images/36.jpg",
-  "/images/37.jpg",
-  "/images/38.png",
+  
+  "/images/58.png",
   //"/images/39.jpg",
-  "/images/40.jpg",
-  "/images/41.jpg",
-  "/images/42.jpg",
-  "/images/43.jpg",
-  "/images/44.jpg",
+ 
+  
+
   "/images/45.png",
   "/images/46.jpg",
   "/images/47.jpg",
-  
-
+  "/images/37.jpg",
+  "/images/40.jpg",
+  "/images/42.jpg",
+  "/images/51.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+  "/images/33.png",
+  "/images/50.jpg",
+  "/images/49.jpg",
+  "/images/52.jpg",
+  "/images/43.jpg",
+  "/images/21.jpg",
+  "/images/41.jpg",
+  "/images/20.jpg",
+  "/images/44.jpg",
+  "/images/56.jpg",
+  "/images/57.jpg",
+  "/images/38.png",
 
   
 
@@ -66,13 +79,20 @@ export default function WeddingPortfolio() {
 
       {/* HERO SECTION */}
       <section className="hero">
-        <img src="/images/hero.jpg" alt="Wedding" />
-        <div className="hero-content">
-          
-          <h1>CLIXION PHOTOGRAPHY</h1>
-          <button>View Gallery</button>
-        </div>
-      </section>
+  <video
+    className="hero-video"
+    src="/videos/HeroVideo.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+  <div className="hero-content">
+    <h1>CLIXION PHOTOGRAPHY</h1>
+    <button>View Gallery</button>
+  </div>
+</section>
+
 
       {/* GALLERY SECTION */}
       <section className="gallery">
