@@ -9,13 +9,12 @@ const photos = [
   //"/images/6.jpg",
   //"/images/7.jpg",
   //"/images/8.jpg",
-  "/images/9.jpg",
- // "/images/10.jpg",
+  //"/images/9.jpg",
+ //"/images/10.jpg",
   //"/images/11.jpg",
   //"/images/12.jpg",
   "/images/13.png",
-  "/images/14.jpg",
-  
+  "/images/14.jpg", 
   //"/images/17.jpg",
   //"/images/25.png",
   "/images/19.png",
@@ -30,19 +29,12 @@ const photos = [
   "/images/54.jpg",
   "/images/34.png",
   //"/images/35.jpg",
-  //"/images/36.jpg",
-  
+  //"/images/36.jpg", 
   "/images/58.png",
   //"/images/39.jpg",
- 
-  
-
   "/images/45.png",
   "/images/46.jpg",
   "/images/47.jpg",
-  "/images/37.jpg",
-  "/images/40.jpg",
-  "/images/42.jpg",
   "/images/51.jpg",
   "/images/3.jpg",
   "/images/4.jpg",
@@ -58,6 +50,9 @@ const photos = [
   "/images/56.jpg",
   "/images/57.jpg",
   "/images/38.png",
+  "/images/37.jpg",
+  "/images/40.jpg",
+  "/images/42.jpg",
 
   
 
